@@ -25,5 +25,6 @@ class ccgswift () {
     }
 
     # Do a file ownership fix; files are in flight so hide errors
-    exec {"/bin/chown -R swift.swift /srv/node || exit 0":}
+    # Agents currently timeout here....
+    # exec {"/bin/chown -R swift.swift /srv/node || exit 0":}
 }
